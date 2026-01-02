@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: ts-drama-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    repo: https://github.com/YOUR_USERNAME/ts-drama-adder-bot.git  # កែ YOUR_USERNAME
+    branch: main
